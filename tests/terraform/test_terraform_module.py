@@ -1,4 +1,3 @@
-import os
 import shlex
 import subprocess
 from pathlib import Path
@@ -10,7 +9,7 @@ from pytest_bdd import given, when, then
 
 
 THIS_DIRECTORY = Path(__file__).parent.resolve()
-CHARM_CHANNEL = os.getenv("CHARM_CHANNEL", "2/edge")
+CHARM_CHANNEL = "2/edge"
 
 
 @pytest.fixture(scope="module")
