@@ -19,7 +19,7 @@ jobs:
     uses: canonical/observability/.github/workflows/run-tox-environment.yaml@v1
     with:
       tox-env-name: terraform
-      run-on: "[self-hosted, amd64]"
+      run-on: "[self-hosted, X64]"
       prepare-host-env: true
       provider: machine
       extra-snaps: terraform
